@@ -165,7 +165,13 @@ main{
     transform: translate(-60px, 10px);
 }
 .souschek_p{
-    background: #1d1d1d;
+    background: #ee1c46c4;
+    
+    padding: 4px;
+    border-radius: 5px;
+}
+.souschek_p:hover{
+    background: #EE1C47;
 }
 .chec{
     display: flex;
