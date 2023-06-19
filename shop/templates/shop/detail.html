@@ -1,0 +1,28 @@
+{% extends "shop/base.html" %}
+
+{% block content %}
+{% load static %}
+<section class="detail">
+    <div class="left">
+      <div class="line"></div>
+      <h2>Produit</h2>
+        <img src="{{ product.image.url }}" alt="">
+    </div>
+    <div class="right">
+      <h2 class="name_product">{{ product.title }}</h2>
+      <div class="pp"><h3>Prix:{{ product.price }}</h3><h3> FCA</h3><sapn class="price_bar">{{ product.price_bar }} FCA</span></div>
+      <p>{{ product.description }}</p>
+      <!-- <p id="{{ product.id }}" class="ajouter_detail">Ajouter</a> -->
+      <div class="social-icon">
+        <a target="_blank" href="https://www.facebook.com/profile.php?id=100082416943486&mibexid=ZbWKwL"><i class='bx bxl-facebook'></i></a>
+        <a target="_blank" href="https://www.instagram.com/don_winslie/"><i class='bx bxl-instagram' ></i></a>
+        <a target="_blank" href="https://wa.me/242066693099"><i class='bx bxl-whatsapp' ></i></a>
+    </div>
+    </div>
+  </section>
+  <div class="end-text">
+    <p>Copyright © 2023. votre bien être, notre satisfaction.</p>
+</div>
+  <script src="{%static 'java.js'%}"></script>
+
+{% endblock%}

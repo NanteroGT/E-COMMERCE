@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Don-Shop | Accueil</title>
+    <!-- CSS-link -->
+    <link rel="stylesheet" href="{%static 'style.css'%}">
+    <link rel="stylesheet" href="{%static 'css/style_detail.css'%}">
+    <link rel="shorcut icon" href="{%static 'image/iconez.png'%}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+<script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="loaders">
+        <span class="loader loader-quart"></span>
+     
+    </section>
+    <header>
+        <a title="votre boutique" href="{% url 'home' %}" class="logo"><img src="{%static 'image/logo.png'%}" alt=""></a>
+        <ul class="navmenu">
+            <li><a href="#">accueil</a></li>
+            <li><a href="#trending">produit</a></li>
+           <li><a href="{% url 'contact' %}">contact</a></li>
+            <li><a href="#apro">a propos</a></li>
+        </ul>
+        <div class="nav-icon"> 
+                <p class="chec "><i class='bx bx-cart' ></i><span id="panier" class="align-center checboxn">0
+                        <ul class="souschek">
+                            <li><a href="checkout" class="souschek_p">COMMANDER</a></li>
+                        </ul>
+                </span>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+{% block content %}{% endblock %}
+</body>
+{% block js%}{% endblock %}
+</html>
