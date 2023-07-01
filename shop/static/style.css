@@ -448,10 +448,11 @@ header{
 .end-text{
     background-color: #edfff1;
     text-align: center;
-    padding: 20px;
+    padding: 15px;
 }
 .end-text p{
     color: #111;
+    font-size: 10px;
 }
 .mailto{
     color: #565656;
